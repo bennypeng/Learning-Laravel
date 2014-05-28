@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 5.5.1 (402628)"/><meta name="keywords" content="PHP"/><meta name="altitude" content="57.89960098266602"/><meta name="author" content="leolovenet"/><meta name="created" content="2014-05-20 06:20:21 +0000"/><meta name="latitude" content="39.92551718857855"/><meta name="longitude" content="116.4349279302471"/><meta name="updated" content="2014-05-27 09:56:06 +0000"/><title>Laravel 学习笔记</title></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 5.5.1 (402628)"/><meta name="keywords" content="PHP"/><meta name="altitude" content="57.89960098266602"/><meta name="author" content="leolovenet"/><meta name="created" content="2014-05-20 06:20:21 +0000"/><meta name="latitude" content="39.92551718857855"/><meta name="longitude" content="116.4349279302471"/><meta name="updated" content="2014-05-28 08:21:01 +0000"/><title>Laravel 学习笔记</title></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;">
 <div>
 <div>
 <div>
@@ -12,10 +12,7 @@
 <div>
 <div>
 <div>
-<div>
-<div>
-<div><br/></div>
-<div><font face="Hiragino Sans GB"><b>翻译整理:</b>  <b><a href="mailto:leolovenet@gmail.com">leolovenet@gmail.com</a></b></font></div>
+<div><b>翻译整理:</b>  <b><a href="mailto:leolovenet@gmail.com">leolovenet@gmail.com</a></b><br/></div>
 <div><b>Blog:</b>       <a href="http://leolovenet.com">http://leolovenet.com</a></div>
 <div><font face="Hiragino Sans GB"><b>官方文档:</b>  <a href="http://laravel.com/docs/quick">http://laravel.com/docs/quick</a></font></div>
 <div><br/></div>
@@ -23,7 +20,7 @@
 <div><br/></div>
 <div><font color="#95A5A5">本文没有讲解安装步骤,假设你已经安装成功 Laravel 了. 截至目前, Laravel 的<b>最新稳定版本为 4.1</b></font></div>
 <div><font color="#95A5A5" face="Hiragino Sans GB"><br/></font></div>
-<div><font face="Hiragino Sans GB" color="#00BE9C" style="font-size: 16px;"><b>Artisan</b></font><font color="#95A5A5" face="Hiragino Sans GB"><br/></font></div>
+<div><font face="Hiragino Sans GB" color="#00BE9C" style="font-size: 18px;"><b>Artisan</b></font><font color="#95A5A5" face="Hiragino Sans GB"><br/></font></div>
 <div><font color="#EA4B35" face="Hiragino Sans GB">Laravel</font><font face="Hiragino Sans GB" style="color: rgb(43, 61, 81);"> 有一个命令行接口,叫做 </font><font color="#EA4B35"><font face="Hiragino Sans GB">Artisan </font></font><span style="color: rgb(43, 61, 81); font-size: 14px;">. 它提供了一些在开放网站过程中非常有用的命令.是通过 </span><span style="font-size: 14px;"><font color="#9C56B8">Symfony Console component</font></span><span style="color: rgb(43, 61, 81); font-size: 14px;"> 来驱动的. 可以在项目 Root 目录下运行.</span></div>
 </div>
 <blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><b style="color: rgb(34, 127, 188);">用法:</b><font face="Hiragino Sans GB"><br/></font></blockquote>
@@ -33,11 +30,115 @@
 <div><font color="#2C97DF">(2) </font>访问每个命令的帮助信息:      <font face="Courier" color="#EA4B35">php artisan </font><font face="Courier" color="#9C56B8">help migrate</font></div>
 <div><font face="Hiragino Sans GB" color="#2C97DF">(3) </font><font color="#2B3D51" face="Hiragino Sans GB">在特定配置环境下运行:         </font><font face="Courier" color="#EA4B35">php artisan</font><font color="#2B3D51" face="Courier"> </font><span style="font-family: Courier; font-size: 14px;"><font color="#9C56B8">migrate --env=local</font></span></div>
 <div><font face="Hiragino Sans GB" color="#2C97DF">(4) </font><font face="Hiragino Sans GB" color="#2B3D51">现实当前 </font><font face="Hiragino Sans GB" color="#EA4B35">Laravel </font><font face="Hiragino Sans GB" color="#2B3D51">版本:         </font><span style="color: rgb(234, 75, 53); font-family: Courier; font-size: 14px;">php artisan </span><span style="font-family: Courier; font-size: 14px;"><font color="#9C56B8">--version</font></span></div>
+<div><span style="font-family: Courier; font-size: 14px;"><font color="#9C56B8"><br/></font></span></div>
 </blockquote>
 </blockquote>
-<blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;"><b style="color: rgb(34, 127, 188);">  </b></blockquote>
+<b style="font-size: 18px;"><font color="#00BE9C">Blade</font></b></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">Blade(刀锋), 是 Laravel 的模板系统(</font><span style="color: rgb(44, 61, 81);"> templating system</span><span style="color: rgb(43, 61, 81);">). Blade 运行很快, 因为它使用简单的正则表达式把你的模板编译成为纯 PHP, 同时 Blade 又提供了像</span><font color="#9C56B8">模板继承</font><span style="color: rgb(43, 61, 81);">, 以及 php 的</span> <font color="#EA4B35">if</font> <span style="color: rgb(43, 61, 81);">和</span> <font color="#EA4B35">for</font><span style="color: rgb(43, 61, 81);"> 类似的语法</span><font color="#9C56B8">结构控制语句</font><span style="color: rgb(43, 61, 81);">. 更多的信息请查看 </span><a href="http://laravel.com/docs/templates">Blade 的详细文档</a></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51"><br/></font></blockquote>
+<span style="font-size: 18px;"><b><font color="#00BE9C">Migration</font></b></span><font color="#2B3D51"><br/></font>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">当我们想</font><font color="#2C97DF">创建一个数据库表格</font><font color="#2B3D51">来存放我们的数据的时候, 可以是用</font><font color="#C33825">Laravel</font><font color="#2B3D51">的</font> <font color="#9C56B8">migration (迁移)系统</font><font color="#2B3D51">.  </font><font color="#C33825">Laravel</font> <font color="#2B3D51">的</font> <font color="#9C56B8">migration</font> <font color="#2B3D51">系统可以</font><font color="#2C97DF">直观的定义对数据库的修改</font><font color="#2B3D51">, 并且很容易跟团队的其他人员共享.</font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><br/></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">使用</font> <font color="#9C56B8">migration</font> <font color="#2B3D51">的第一步,需要我们先配置对数据库的连接信息. 框架把所有对数据库的配置信息都存放在了</font> <font color="#EA4B35">app/config/database.php</font> <font color="#2B3D51">文件中. 默认行况下</font> <font color="#C33825">Laravel</font> <font color="#2B3D51">是使用</font> <font color="#E87E04">MySQL</font> <font color="#2B3D51">,你需要在配置文件中指定好对数据库的连接信息. 如果你更愿意是用</font> <font color="#E87E04">sqlite</font> <font color="#2B3D51">替代</font> <font color="#E87E04">MySQL</font> <font color="#2B3D51">的话, 仅需要更改配置文件的 </font><font color="#EA4B35" face="Courier">driver</font> <span style="color: rgb(44, 61, 81); font-size: 14px;">选项为  </span><font face="Courier" color="#EA4B35">sqlite</font><font color="#2B3D51"> ,随后框架将使用包含在</font> <font face="Courier" color="#EA4B35">app/database</font> <font color="#2B3D51">目录下的 </font><span style="font-size: 14px;"><font color="#D55400">SQLite</font></span> <span style="color: rgb(44, 61, 81); font-size: 14px;">数据库作为存储媒介.</span></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51"><br/></font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">第二步,创建</font> <font color="#9C56B8">migration</font> <font color="#2B3D51">.我们将要使用上面介绍的</font> <font color="#C33825">Artisan</font> <font color="#2B3D51">命令行. 进入终端, 在项目的根目录下运行下面的命令:</font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<pre style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 8px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding: 2px; overflow: hidden; word-wrap: break-word; border: 1px solid rgb(136, 136, 136); line-height: 1.9em; -webkit-background-clip: padding-box; background-origin: padding-box; background-clip: padding-box; background-color: rgb(51, 51, 51);">
+<code style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 11px; padding: 0px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; background-color: transparent !important;"><font color="#C33825">php </font><font color="#EA4B35">artisan </font><font color="#2C97DF">migrate:make</font><span style="color: rgb(233, 228, 229);" /><font color="#00BE9C">create_users_table</font></code>
+</pre></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">这将会在</font> <font color="#EA4B35" face="Courier">app/database/migrations</font> <font color="#2B3D51">文件夹内生成</font> <font color="#9C56B8">migration</font> <font color="#2B3D51">文件, 文件中有一个由两个方法</font> <font color="#EA4B35" face="Courier">up</font> <font color="#2B3D51">和</font> <font face="Courier" color="#EA4B35">down</font> <font color="#2B3D51">组成的一个类(类名为 </font><font face="Courier" color="#00BE9C">CreateUsersTable</font><span style="color: rgb(43, 61, 81);">). 在</span> <font color="#EA4B35" face="Courier">up</font> <span style="color: rgb(43, 61, 81);">方法中,应该包含对数据库表格渴望的改变, 在</span> <font color="#EA4B35" face="Courier">down</font> <span style="color: rgb(43, 61, 81);">方法中应该做出相反的动作.</span></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51"><br/></font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">让我们定义一个像下面的这样的 migration:</font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<pre style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 8px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding: 2px; overflow: hidden; word-wrap: break-word; border: 1px solid rgb(136, 136, 136); line-height: 1.9em; -webkit-background-clip: padding-box; background-origin: padding-box; background-clip: padding-box; background-color: rgb(51, 51, 51);">
+<code style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 11px; padding: 0px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; background-color: transparent !important;"><span style="color: rgb(75, 177, 177);">public</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(75, 177, 177);">function</span><span style="color: rgb(233, 228, 229);"> up</span><span style="color: rgb(255, 255, 255);">()</span><span style="color: rgb(233, 228, 229);"
+/><span style="color: rgb(255, 255, 255);">{</span><span style="color: rgb(233, 228, 229);"
+    /><span style="color: rgb(239, 124, 97);">Schema</span><span style="color: rgb(255, 255, 255);">::</span><span style="color: rgb(233, 228, 229);">create</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'users'</span><span style="color: rgb(255, 255, 255);">,</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(75, 177, 177);">function</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(233, 228, 229);">$table</span><span style="color: rgb(255, 255, 255);">)   </span><font color="#7E8C8D"> //创建一个 users 表格.</font><span style="color: rgb(233, 228, 229);"
+    /><span style="color: rgb(255, 255, 255);">{</span><span style="color: rgb(233, 228, 229);">
+        $table</span><span style="color: rgb(255, 255, 255);">-&gt;</span><span style="color: rgb(233, 228, 229);">increments</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'id'</span><span style="color: rgb(255, 255, 255);">);               </span><font color="#7E8C8D">//在 users 表中添加一个子增长的 id 列</font><span style="color: rgb(233, 228, 229);">
+        $table</span><span style="color: rgb(255, 255, 255);">-&gt;</span><span style="color: rgb(75, 177, 177);">string</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'email'</span><span style="color: rgb(255, 255, 255);">)-&gt;</span><span style="color: rgb(233, 228, 229);">unique</span><span style="color: rgb(255, 255, 255);">();      </span><font color="#7E8C8D">//在 users 表中添加一个只能是唯一的 email 字符列</font><span style="color: rgb(233, 228, 229);">
+        $table</span><span style="color: rgb(255, 255, 255);">-&gt;</span><span style="color: rgb(75, 177, 177);">string</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'name'</span><span style="color: rgb(255, 255, 255);">);                 </span><span style="color: rgb(126, 140, 141); background-color: transparent; line-height: 1.9em;">//在 users 表中添加一个 name 字符列</span><span style="color: rgb(233, 228, 229);">
+        $table</span><span style="color: rgb(255, 255, 255);">-&gt;</span><span style="color: rgb(233, 228, 229);">timestamps</span><span style="color: rgb(255, 255, 255);">();                   </span><font color="#7E8C8D">//在 users 表中添加一个时间戳的列</font><span style="color: rgb(233, 228, 229);"
+    /><span style="color: rgb(255, 255, 255);">});</span><span style="color: rgb(233, 228, 229);"
+/><span style="color: rgb(255, 255, 255);">}</span><span style="color: rgb(233, 228, 229);"
+
+/><span style="color: rgb(75, 177, 177);">public</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(75, 177, 177);">function</span><span style="color: rgb(233, 228, 229);"> down</span><span style="color: rgb(255, 255, 255);">()</span><span style="color: rgb(233, 228, 229);"
+/><span style="color: rgb(255, 255, 255);">{</span><span style="color: rgb(233, 228, 229);"
+    /><span style="color: rgb(239, 124, 97);">Schema</span><span style="color: rgb(255, 255, 255);">::</span><span style="color: rgb(233, 228, 229);">drop</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'users'</span><span style="color: rgb(255, 255, 255);">);                     </span><font color="#7E8C8D">//删除这个表格</font><span style="color: rgb(233, 228, 229);"
+/><span style="color: rgb(255, 255, 255);">}</span></code>
+</pre></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51"><br/></font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">一切准备完毕,接下来,我们就可以在终端中使用</font> <font color="#EA4B35" face="Courier">migrate </font><font color="#2B3D51">命令来运行我们刚刚设计好了的</font> <font color="#8F3FAE">miagration</font><font color="#2B3D51">. 在你项目的根目录下面简单的执行下面的命令:</font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<pre style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 8px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding: 2px; overflow: hidden; word-wrap: break-word; border: 1px solid rgb(136, 136, 136); line-height: 1.9em; -webkit-background-clip: padding-box; background-origin: padding-box; background-clip: padding-box; background-color: rgb(51, 51, 51);">
+<code style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 11px; padding: 0px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; background-color: transparent !important;"><font color="#C33825">php </font><font color="#EA4B35">artisan </font><font color="#2C97DF">migrate</font></code>
+</pre></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51"><br/></font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">如果你希望做回滚 migration 的话, 你就需要执行 </font><font color="#EA4B35" face="Courier">migrate:rollback</font> <span style="color: rgb(44, 61, 81); font-size: 14px;">命令. 现在我们已经有了我们的数据库表格,接下来让我们向里面存放点数据.</span></blockquote>
+<div><font color="#2B3D51"><font color="#2B3D51"><br/></font></font></div>
+<span style="font-size: 18px;"><b><font color="#00BE9C">Eloquent ORM</font></b></span><font color="#2B3D51"><br/></font>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">Laravel拥有一个超级 ORM 系统叫做</font> <font color="#EA4B35">Eloquent</font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">首先, 让我们来定义一个模型. 一个</font> <font color="#EA4B35">Eloquent</font> <font color="#2B3D51">模型一个用来查询与它相连的表格, 也可以用来代表表格里的一行. 一会儿你就会明白了. Models 一般是存储在</font> <font color="#EA4B35" face="Courier">app/models</font> <font color="#2B3D51">目录下面的. 让我们在这个目录下定义一个</font> <font face="Courier" color="#2C97DF">User.php</font> <font color="#2B3D51">模型文件,像这样</font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<pre style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 8px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding: 2px; color: rgb(233, 228, 229); overflow: hidden; word-wrap: break-word; border: 1px solid rgb(136, 136, 136); line-height: 1.9em; -webkit-background-clip: padding-box; background-origin: padding-box; background-clip: padding-box; background-color: rgb(51, 51, 51); background-position: initial initial; background-repeat: initial initial;">
+<code style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 11px; color: rgb(244, 100, 95); padding: 0px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; background: transparent !important;"><span style="color: rgb(75, 177, 177);">class</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(239, 124, 97);">User</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(75, 177, 177);">extends</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(239, 124, 97);">Eloquent</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(255, 255, 255);">{}</span></code>
+</pre></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">注意一下,这里我们并没有告诉 Eloquent 我们要使用那个表格. Eloquent 有各种自己的约定, 其中之一就是</font><font color="#227FBC">使用</font><font color="#9C56B8">模型名字</font><font color="#227FBC">的复数形式作为</font><font color="#9C56B8">模型数据库中表格</font><font color="#227FBC">的名字. </font><span style="color: rgb(43, 61, 81);">这些全是风俗约定而已.</span></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51"><br/></font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">你可以使用你最喜欢的数据库管理工具,在</font> <font color="#2D96DE">users</font> <font color="#2B3D51">表格中插入几行数据,我们接下来将使用</font> <font color="#EA4B35">Eloquent</font> <font color="#2B3D51">来检索他们,并把他们交给</font><font color="#9C56B8">视图(View)</font><font color="#2B3D51">来展示.</font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">在</font> <font color="#EA4B35" face="Courier">app/routes.php</font> <font color="#2B3D51">中添加下面的配置:</font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<pre style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 8px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding: 2px; overflow: hidden; word-wrap: break-word; border: 1px solid rgb(136, 136, 136); line-height: 1.9em; -webkit-background-clip: padding-box; background-origin: padding-box; background-clip: padding-box; background-color: rgb(51, 51, 51);">
+<code style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 11px; padding: 0px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; background-color: transparent !important;"><span style="color: rgb(239, 124, 97);">Route</span><span style="color: rgb(255, 255, 255);">::</span><span style="color: rgb(75, 177, 177);">get</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'users'</span><span style="color: rgb(255, 255, 255);">,</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(75, 177, 177);">function</span><span style="color: rgb(255, 255, 255);">()</span><span style="color: rgb(233, 228, 229);"
+/><span style="color: rgb(255, 255, 255);">{</span><span style="color: rgb(233, 228, 229);">
+    $users </span><span style="color: rgb(255, 255, 255);">=</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(239, 124, 97);">User</span><span style="color: rgb(255, 255, 255);">::</span><font color="#EA4B35">all</font><span style="color: rgb(255, 255, 255);">();</span><span style="color: rgb(233, 228, 229);"
+
+    /><span style="color: rgb(75, 177, 177);">return</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(239, 124, 97);">View</span><span style="color: rgb(255, 255, 255);">::</span><span style="color: rgb(233, 228, 229);">make</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'users'</span><span style="color: rgb(255, 255, 255);">)-&gt;</span><font color="#EA4B35">with</font><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'users'</span><span style="color: rgb(255, 255, 255);">,</span><span style="color: rgb(233, 228, 229);"> $users</span><span style="color: rgb(255, 255, 255);">);</span><span style="color: rgb(233, 228, 229);"
+/><span style="color: rgb(255, 255, 255);">});</span></code>
+</pre></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#EA4B35">User</font> <font color="#2B3D51">模型的  </font><font face="Courier" color="#EA4B35">all</font> <font color="#2B3D51">方法检索出了所有在</font> <font color="#9C56B8">users</font> <font color="#2B3D51">表格中的行, 然后我们使用  </font><font face="Courier" color="#EA4B35">with</font> <font color="#2B3D51">方法传递这些记录到</font><font color="#9C56B8">视图(view)</font><font color="#2B3D51">中. </font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#EA4B35" face="Courier">with</font> <font color="#2B3D51">方法接受一个</font><font color="#D55400">键和值</font><font color="#2B3D51">,使用他们在</font> <font color="#9C56B8">view</font> <font color="#2B3D51">中可见. 我们可以在 view 中这样来展示他们,在</font> <font color="#EA4B35" face="Courier">app/view</font> <font color="#2B3D51">目录下,创建两个文件, </font><span style="font-size: 14px;"><font color="#EA4B35">layout.blade.php</font></span> <span style="color: rgb(44, 61, 81); font-size: 14px;">和 </span><span style="font-size: 14px;"><font color="#EA4B35">users.blade.php</font></span></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51"><br/></font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">接下来我们看一下使用 </font><font color="#EA4B35">刀锋(Blade)</font> <font color="#2B3D51">的语法定义的</font><font color="#9C56B8">视图(View):</font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2C97DF">layout.blade.php</font><font color="#2B3D51">文件内容为:</font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<pre style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 8px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding: 2px; color: rgb(233, 228, 229); overflow: hidden; word-wrap: break-word; border: 1px solid rgb(136, 136, 136); line-height: 1.9em; -webkit-background-clip: padding-box; background-origin: padding-box; background-clip: padding-box; background-color: rgb(51, 51, 51); background-position: initial initial; background-repeat: initial initial;">
+<code style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 11px; color: rgb(244, 100, 95); padding: 0px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; background: transparent !important;"><span style="color: rgb(75, 177, 177);">&lt;html&gt;</span><span style="color: rgb(233, 228, 229);"
+    /><span style="color: rgb(75, 177, 177);">&lt;body&gt;</span><span style="color: rgb(233, 228, 229);"
+        /><span style="color: rgb(75, 177, 177);">&lt;h1&gt;</span><span style="color: rgb(233, 228, 229);">Laravel Quickstart</span><span style="color: rgb(75, 177, 177);">&lt;/h1&gt;</span><span style="color: rgb(233, 228, 229);">
+
+        @yield('content')
+    </span><span style="color: rgb(75, 177, 177);">&lt;/body&gt;</span><span style="color: rgb(233, 228, 229);"
+/><span style="color: rgb(75, 177, 177);">&lt;/html&gt;</span></code>
+</pre></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><span style="font-size: 14px;"><font color="#2C97DF">users.blade.php</font><font color="#33475F">文件内容为:</font></span></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<pre style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 8px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding: 2px; overflow: hidden; word-wrap: break-word; border: 1px solid rgb(136, 136, 136); line-height: 1.9em; -webkit-background-clip: padding-box; background-origin: padding-box; background-clip: padding-box; background-color: rgb(51, 51, 51);">
+<code style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 11px; padding: 0px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; background-color: transparent !important;"><span style="color: rgb(188, 212, 42);">@extends</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'layout'</span><span style="color: rgb(255, 255, 255);">)</span><span style="color: rgb(233, 228, 229);"
+
+/><span style="color: rgb(188, 212, 42);">@section</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'content'</span><span style="color: rgb(255, 255, 255);">)</span><span style="color: rgb(233, 228, 229);"
+    /><span style="color: rgb(188, 212, 42);">@foreach</span><span style="color: rgb(255, 255, 255);">(</span><font color="#EA4B35">$users</font><span style="color: rgb(233, 228, 229);" /><font color="#2C97DF">as</font><span style="color: rgb(233, 228, 229);" /><font color="#1ECE6C">$user</font><span style="color: rgb(255, 255, 255);">)</span><span style="color: rgb(233, 228, 229);"
+        /><span style="color: rgb(188, 212, 42);">&lt;p&gt;</span><span style="color: rgb(255, 255, 255);">{{</span><span style="color: rgb(233, 228, 229);" /><font color="#1ECE6C">$user</font><span style="color: rgb(255, 255, 255);">-&gt; </span><font color="#9C56B8">name</font><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(255, 255, 255);">}}</span><span style="color: rgb(188, 212, 42); background-color: transparent; line-height: 1.9em;">&lt;/p&gt;</span><span style="color: rgb(233, 228, 229);"
+    /><span style="color: rgb(188, 212, 42);">@endforeach</span><span style="color: rgb(233, 228, 229);"
+/><span style="color: rgb(188, 212, 42);">@stop</span></code>
+</pre></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51">你可能会比较惊奇, 怎么没有看见</font> <font face="Courier" color="#EA4B35">echo</font> <font color="#2B3D51">语句呢?</font> <font color="#2C97DF">当使用 Blade 的时候, 你可以使用</font> <font color="#EA4B35" style="font-weight: bold;">{{ }}</font> <font color="#2C97DF">来显示数据.</font> <font color="#2B3D51">这个很容易做到. 现在你可以打开你的浏览器观看 http://yoursite.com/user 来观看展示的结果了.</font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><font color="#2B3D51"><br/></font></blockquote>
+<blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;"><br/></blockquote>
 <div>
-<div><font color="#00BE9C" face="Hiragino Sans GB" style="font-size: 18px;"><b>目录结构</b></font></div>
+<div>
+<div>
+<div>
+<div><font color="#00BE9C" face="Hiragino Sans GB" style="font-size: 18px;"><b>Laravel项目目录结构</b></font></div>
 <blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;">
 <div><span style="font-size: 14px;"><font color="#7E8C8D">├── app                     </font><font color="#2C97DF">// 网站APP 代码目录, 自己的代码主要存放在这个目录下,主要是 MVC 结构</font><br/>
 <font color="#7E8C8D">│   ├── commands   </font><br/>
@@ -1123,7 +1224,7 @@ $response</span><span style="color: rgb(255, 255, 255);">-&gt;</span><span style
 <pre style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 8px; border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; padding: 2px; color: rgb(233, 228, 229); overflow: hidden; word-wrap: break-word; border: 1px solid rgb(136, 136, 136); line-height: 1.9em; -webkit-background-clip: padding-box; background-origin: padding-box; background-clip: padding-box; background-color: rgb(51, 51, 51);">
 <code style="font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 11px; color: rgb(244, 100, 95); padding: 0px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; background-color: transparent !important;"><span style="color: rgb(239, 124, 97);">Route</span><span style="color: rgb(255, 255, 255);">::</span><span style="color: rgb(75, 177, 177);">get</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'/'</span><span style="color: rgb(255, 255, 255);">,</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(75, 177, 177);">function</span><span style="color: rgb(255, 255, 255);">()</span><span style="color: rgb(233, 228, 229);"
 /><span style="color: rgb(255, 255, 255);">{</span><span style="color: rgb(233, 228, 229);"
-    /><span style="color: rgb(75, 177, 177);">return</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(239, 124, 97);">View</span><span style="color: rgb(255, 255, 255);">::</span><span style="color: rgb(233, 228, 229);">make</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'greeting'</span><span style="color: rgb(255, 255, 255);">,</span><span style="color: rgb(233, 228, 229);"> array</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'name'</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(255, 255, 255);">=&gt;</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(188, 212, 42);">'Taylor'</span><span style="color: rgb(255, 255, 255);">));</span><span style="color: rgb(233, 228, 229);"
+    /><span style="color: rgb(75, 177, 177);">return</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(239, 124, 97);">View</span><span style="color: rgb(255, 255, 255);">::</span><span style="color: rgb(233, 228, 229);">make</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'greeting'</span><span style="color: rgb(255, 255, 255);">,</span><span style="color: rgb(233, 228, 229);"> array</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(188, 212, 42);">'name'</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(255, 255, 255);">=&gt;</span><span style="color: rgb(233, 228, 229);" /><span style="color: rgb(188, 212, 42);">'Taylor'</span><span style="color: rgb(255, 255, 255);">));  //使用 make 方法生产 view 视图</span><span style="color: rgb(233, 228, 229);"
 /><span style="color: rgb(255, 255, 255);">});</span></code>
 </pre></blockquote>
 <blockquote style="margin: 0px 0px 0px 40px; border: none; padding: 0px;">传递给 <font color="#EA4B35">View::make</font> 的第二个数组参数的数据,可以在 view 中被查看.</blockquote>
@@ -1735,15 +1836,6 @@ php artisan controller</span><span style="color: rgb(255, 255, 255);">:</span><s
 <div><font face="Hiragino Sans GB"><br/></font></div>
 <div><font face="Hiragino Sans GB"><br/></font></div>
 <div><font face="Hiragino Sans GB"><br/></font></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
